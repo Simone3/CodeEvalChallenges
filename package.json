@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Simone3/CodeEvalChallenges/issues"
   },
-  "homepage": "https://github.com/Simone3/CodeEvalChallenges#readme"
+  "homepage": "https://github.com/Simone3/CodeEvalChallenges#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "glob": "^7.1.2",
+    "path": "^0.12.7"
+  }
 }
