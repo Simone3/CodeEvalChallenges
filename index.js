@@ -4,16 +4,15 @@ const fs     = require('fs'),
       path   = require('path'),
       glob   = require("glob"),
       cnst   = require("./constants.js"),
+      lang   = require("./lang.js"),
       runner = require("./runner.js");
 
 var modulesToRun = process.argv[2];
 
 if(!modulesToRun) {
 
-    console.log("Simple runner for the CodeEval challenges. Provide argument to run modules: e.g. \"node index.js easy/FizzBuzz\" runs " +
-                "the FizzBuzz challenge, \"node index.js easy/*\" runs all easy challenges");
-
-    console.log("\nThese are the available challenges:\n");
+    console.log(lang.LIST_EXPLANATION);
+    console.log(lang.LIST_HEADER);
 
     // Loop all difficulties modes directories
     fs.readdirSync(cnst.CHALLENGES_FOLDER).forEach(function(file) {
@@ -21,14 +20,14 @@ if(!modulesToRun) {
         var fullFilePath = path.join(cnst.CHALLENGES_FOLDER, file);
         if(isDirectory(fullFilePath)) {
 
-            console.log(cnst.LIST_DIFFICULTY_PREFIX + file);
+            console.log(lang.LIST_DIFFICULTY_PREFIX + file);
 
             // Loop all challenges directories in this directory
             fs.readdirSync(fullFilePath).forEach(function(file) {
                     
                 if(isDirectory(path.join(fullFilePath, file))) {
 
-                    console.log(cnst.LIST_CHALLENGE_PREFIX + file);
+                    console.log(lang.LIST_CHALLENGE_PREFIX + file);
                 }
             });
         }
@@ -57,15 +56,11 @@ else {
             }
             else {
 
-                console.log(cnst.ERR_NO_MODULES);
+                console.log(lang.ERR_NO_MODULES);
             }
         }
     });
 }
-
-
-
-
 
 function isDirectory(fullFilePath) {
 
