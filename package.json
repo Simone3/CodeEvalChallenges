@@ -1,0 +1,19 @@
+{
+  "name": "codeevalchallenges",
+  "version": "1.0.0",
+  "description": "My solutions to some CodeEval challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simone3/CodeEvalChallenges.git"
+  },
+  "author": "Simone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simone3/CodeEvalChallenges/issues"
+  },
+  "homepage": "https://github.com/Simone3/CodeEvalChallenges#readme"
+}
