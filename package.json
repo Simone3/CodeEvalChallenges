@@ -20,5 +20,8 @@
     "fs": "0.0.1-security",
     "glob": "^7.1.2",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
   }
 }
