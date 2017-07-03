@@ -65,7 +65,7 @@ function matrixToString(matrix) {
 	
 	for(var row = 0; row < matrix.length; row++) {
 
-		result += matrix[0][row]
+		result += matrix[0][row];
 		
 		for(var col = 1; col < matrix.length; col++) {
 			

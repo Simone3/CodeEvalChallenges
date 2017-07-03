@@ -13,7 +13,7 @@ Chall.main = function(inputFileName) {
 
 		if(line) {
 
-      triangle.push(line.trim().split(' '));
+      triangle.push(line.trim().split(" "));
     }
   });
 

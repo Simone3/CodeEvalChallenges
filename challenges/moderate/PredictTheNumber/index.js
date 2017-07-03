@@ -13,7 +13,7 @@ Chall.main = function(inputFileName) {
         console.log(getValueGoingBackPowerOfTwoRecursive(parseInt(line)));
     }
   });
-}
+};
 
 function getValueGoingBackPowerOfTwoRecursive(n) {
 
