@@ -1,7 +1,7 @@
 "use strict";
 
-const fs     = require('fs'),
-      path   = require('path'),
+const fs     = require("fs"),
+      path   = require("path"),
       glob   = require("glob"),
       cnst   = require("./constants.js"),
       lang   = require("./lang.js"),

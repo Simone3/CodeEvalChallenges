@@ -1,6 +1,6 @@
 "use strict";
 
-const path   = require('path'),
+const path   = require("path"),
       fs     = require("fs"),
       cnst   = require("./constants.js"),
       lang   = require("./lang.js");
@@ -45,7 +45,7 @@ Runner.run = function(module) {
     }
 
     console.log(lang.RUN_CHALLENGE_FOOTER(module));
-}
+};
 
 /**
  * Helper to run a test
