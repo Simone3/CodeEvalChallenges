@@ -1,0 +1,7 @@
+ab | ae | bc
+bc | ae | ab
+ae | bc | ab
+ab | bc | cd | ae | cx | xz
+bc | cd | ae | cx | xz | ab
+xz | bc | cd | ae | cx | ab
+ab
